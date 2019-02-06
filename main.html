@@ -1,0 +1,94 @@
+<html>
+<head>
+    <h1>Iscrizione per Finsa</h1>
+
+    <style>
+        .invalid {
+            border-color: red;
+        }
+
+        .valid {
+            border-color: green;
+        }
+
+        span
+        {
+            color: rgb(179, 204, 39);
+        }
+        .p1
+        {
+            position: fixed;
+            left: 200px;
+            top: 50px;
+        }
+        .p2
+        {
+            position:fixed;
+            left: 200px;
+            top: 131px;
+        }
+        p{
+            position:static;
+        }
+        html{
+            background-color:rgb(136, 135, 135); 
+            background-image: url("Logo.png");
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        p,span{
+            font-family:courier;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input{
+            border-style: groove;
+            border-width: 5px;
+            border-color: black;
+        }
+     </style>   
+</head>
+<body>
+    
+    <form name="ourForm" >
+        <p>Nome:<br>
+        <input type="text" id="Nome" name="Nome" > * <br>
+        <span id="Non"></span><br> 
+        </p>
+        <p class="p1">Cognome:<br>
+        <input type="text" id="Cognome" name="Cognome" > *  <br>
+        <span id="Nal"></span>
+        </p>
+        <p>E-Mail:<br>
+        <input type="text" id="Email" name="Email" > *<br>
+        <span id="Nae"></span><br> 
+        </p>
+        <p class="p2">Telefono:<br>
+        <input type="text" id="Tel" name="Tel" > *<br>
+        <span id="Nat" ></span>
+        </p>
+        <p>Data di nascita:<br>
+        <input type="date" id="Data" name="Data" > *<br>
+        <span id="Nad"></span><br> 
+        </p>
+        <p>Interessi:<br>
+        <select name="interessi" id="interessi">
+            <option value="nessuno" selected>Nessuno</option>
+            <option value="grafica">Grafica</option>
+            <option value="programmazione">Programmazione</option>
+            <option value="marketing">Marketing</option>
+        </select>
+        <span id="Naselect"></span><br><br>
+
+        *Campi obbligatori
+
+        </p>
+        <button type="submit" id="button"  name="submit">invia</button>
+    </form>
+  <p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </p>
+  <script src="betterValidation.js"></script>
+</body>
+</html>
